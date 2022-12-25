@@ -9,6 +9,7 @@ import Button from "./Button";
 
 const MobileMenuWrapper = styled.nav`
   position: absolute;
+  z-index: 10000000;
   left: 0;
   top: 0;
   width: 100%;

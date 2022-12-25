@@ -6,10 +6,10 @@ const FeatureArticle = ({ title, text, img }) => {
     <div className="feature">
       <div className="bg"></div>
       <img src={img} alt="" />
-      <div className="content">
-        <h3 className="text-dark fw-m">{title}</h3>
-        <p className="text-light">{text}</p>
-        <Button className="info-btn filled blue">More Info</Button>
+      <div className="content fs-500">
+        <h3 className="text-dark fw-m fs-700">{title}</h3>
+        <p className="text-light fs-600">{text}</p>
+        <Button className="fs-500 info-btn filled blue">More Info</Button>
       </div>
     </div>
   );

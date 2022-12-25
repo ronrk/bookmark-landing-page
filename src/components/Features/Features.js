@@ -8,8 +8,8 @@ const Features = () => {
   let activeFeautre = featuresArticles[activeIdx];
   return (
     <Wrapper className="text-center">
-      <h2 className="text-dark">Features</h2>
-      <p className="text-light">
+      <h2 className="text-dark fs-800">Features</h2>
+      <p className="text-light fs-600">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
@@ -21,7 +21,11 @@ const Features = () => {
             onClick={() => {
               setActiveIdx(0);
             }}
-            className={activeIdx === 0 ? "btn tab-btn active" : "btn tab-btn"}
+            className={
+              activeIdx === 0
+                ? "fs-600 btn tab-btn active "
+                : "fs-600 btn tab-btn "
+            }
           >
             Simple Bookmarking
           </a>
@@ -32,7 +36,11 @@ const Features = () => {
             onClick={() => {
               setActiveIdx(1);
             }}
-            className={activeIdx === 1 ? "btn tab-btn active" : "btn tab-btn"}
+            className={
+              activeIdx === 1
+                ? "fs-600 btn tab-btn active"
+                : "fs-600 btn tab-btn"
+            }
           >
             Speedy Searching
           </a>
@@ -43,7 +51,11 @@ const Features = () => {
             onClick={() => {
               setActiveIdx(2);
             }}
-            className={activeIdx === 2 ? "btn tab-btn active" : "btn tab-btn"}
+            className={
+              activeIdx === 2
+                ? "fs-600 btn tab-btn active"
+                : "fs-600 btn tab-btn"
+            }
           >
             Easy Sharing
           </a>

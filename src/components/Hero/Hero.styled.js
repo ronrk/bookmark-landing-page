@@ -10,9 +10,10 @@ const HeroWrapper = styled.div`
 
   & h1 {
     text-transform: capitalize;
+
+    margin-top: 2rem;
   }
   & p {
-    font-size: 1em;
     line-height: 1.7;
     margin-block: 1.5em;
     max-width: 50ch;
@@ -32,7 +33,7 @@ const HeroWrapper = styled.div`
   }
   & .bg {
     right: -5rem;
-    bottom: 0rem;
+    bottom: 3rem;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     @media screen and (max-width: 850px) {
@@ -45,6 +46,13 @@ const HeroWrapper = styled.div`
     gap: 2rem;
     align-items: center;
     text-align: left;
+
+    & h2 {
+      margin-block: 0;
+    }
+    & p {
+      margin-inline: 0;
+    }
 
     & .hero__img {
       order: 2;

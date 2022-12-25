@@ -5,13 +5,11 @@ const FeaturedWrapper = styled.section`
   margin-inline: auto;
 
   & h2 {
-    font-size: 1.7em;
     font-weight: 500;
   }
   & p {
-    font-size: 1em;
-    line-height: 1.4;
-    margin-block: 1em 2em;
+    line-height: 1.7;
+    margin-block: 0.5em 2em;
   }
 
   & ul {
@@ -26,7 +24,6 @@ const FeaturedWrapper = styled.section`
         border-bottom: 1px solid hsl(var(--color-text-light), 0.4);
       }
       & a {
-        font-size: 1.2rem;
         letter-spacing: 1.1px;
         margin: 0;
 
@@ -89,12 +86,10 @@ const FeaturedWrapper = styled.section`
       margin-block: 5rem;
     }
     & h3 {
-      font-size: 1.5rem;
     }
     & p {
-      font-size: 1em;
       line-height: 1.6;
-      margin-block: 0.3em 5rem;
+      margin-block: 1em 5rem;
     }
     & .info-btn {
       display: none;
@@ -109,13 +104,9 @@ const FeaturedWrapper = styled.section`
         display: block;
         margin-top: 2rem;
       }
-      & .content {
-        /* flex: 1; */
-        /* margin-inline: auto; */
-      }
       & p {
         flex: 1;
-        margin: 0;
+        margin-block: 0.8em;
       }
       & .bg {
         transform: translateY(50%);

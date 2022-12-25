@@ -10,6 +10,7 @@ const StyledButton = styled.button`
   border-radius: 6px;
   /* aspect-ratio: 7; */
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
 
   &.filled {
     transition: background-color 0.2s;

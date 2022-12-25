@@ -7,10 +7,10 @@ import { linkList } from "../../utils";
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper className="flex-c">
       <Logo className="logo" />
       <nav>
-        <ul>
+        <ul className="flex-c">
           {linkList.map((item, idx) => (
             <li key={idx}>
               <a href={item.path}>{item.name}</a>
@@ -18,7 +18,7 @@ const Footer = () => {
           ))}
         </ul>
       </nav>
-      <div className="social-links">
+      <div className="social-links flex">
         <FacebookIcon className="icon" />
         <TwitterIcon className="icon" />
       </div>
