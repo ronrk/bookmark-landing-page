@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+/* - Soft Blue: hsl(231, 69%, 60%) */
+/* - Soft Red: hsl(0, 94%, 66%) */
+
+/* ### Neutral */
+
+/* - Grayish Blue: hsl(229, 8%, 60%) */
+/* - Very Dark Blue: hsl(229, 31%, 21%) */
+
+:root {
+  --color-primary: 231, 69%, 60%;
+  --color-secondary: 0, 94%, 66%;
+  --color-text-light: 229, 8%, 60%;
+  --color-text-dark: 229, 31%, 21%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+p {
+  max-width: 45ch;
+  margin-inline: auto;
+}
+
+.text-light {
+  color: hsl(var(--color-text-light));
+}
+.text-dark {
+  color: hsl(var(--color-text-dark));
+}
+.text-primary {
+  color: hsl(var(--color-primary));
+}
+.text-secondary {
+  color: hsl(var(--color-secondary));
+}
+.bg-white {
+  background-color: hsl(0, 0%, 95%);
+}
+.bg-primary {
+  background-color: hsl(var(--color-primary));
+}
+.bg-secondary {
+  background-color: hsl(var(--color-secondary));
+}
+.bg-light {
+  background-color: hsl(var(--color-text-light));
+}
+.bg-dark {
+  background-color: hsl(var(--color-text-dark));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-l {
+  font-weight: 400;
+}
+.fw-m {
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 1rem);
+}
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.bg {
+  display: block;
+  position: absolute;
+  background-color: hsl(var(--color-primary));
+  width: 400px;
+  height: min(35vw, 250px);
+  z-index: -1;
 }
